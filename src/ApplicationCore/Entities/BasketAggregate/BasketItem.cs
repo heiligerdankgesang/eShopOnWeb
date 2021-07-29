@@ -21,7 +21,7 @@ namespace Microsoft.eShopWeb.ApplicationCore.Entities.BasketAggregate
         {
             Guard.Against.OutOfRange(quantity, nameof(quantity), 0, int.MaxValue);
 
-            Quantity += quantity;
+            Quantity = quantity;
         }
 
         public void SetQuantity(int quantity)
